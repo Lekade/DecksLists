@@ -1,9 +1,12 @@
 {
-  "name": "DecksLists",
+  "name": "decks_lists",
   "private": true,
+  "homepage": "https://lekade.github.io/DecksLists/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite --open",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -11,11 +14,14 @@
   },
   "dependencies": {
     "axios": "1.6.0",
+    "gh-pages": "^6.1.1",
     "prettier": "3.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "7.45.2",
+    "react-loading-skeleton": "3.3.1",
     "react-redux": "8.1.2",
+    "react-toastify": "9.1.3",
     "redux": "4.2.1",
     "redux-thunk": "2.4.2"
   },
@@ -29,6 +35,6 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.3",
     "typescript": "5.1.6",
-    "vite": "5.0.5"
+    "vite": "4.4.8"
   }
 }
