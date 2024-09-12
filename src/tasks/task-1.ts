@@ -1,7 +1,12 @@
 import { Equal, Expect } from '../common/utils/ts-helpers.ts'
 
+type GetLastItemType<T> = [
+    T
+]
+
+
 // task 1
-const getLastItem = (array: any[]) => {
+const getLastItem = <T>(array: T[]):T => {
   return array[array.length - 1]
 }
 
